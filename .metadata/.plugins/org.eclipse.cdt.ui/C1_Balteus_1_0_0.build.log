@@ -1,0 +1,21 @@
+21:17:35 **** Incremental Build of configuration Debug for project C1_Balteus_1_0_0 ****
+make -r -j4 all 
+Building target: C1_Balteus_1_0_0.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="C1_Balteus_1_0_0.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m33+nodsp -mthumb -T C1_Balteus_1_0_0_Debug.ld -o "C1_Balteus_1_0_0.axf" ./utilities/fsl_assert.o ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/boot_multicore_slave.o ./startup/startup_lpc55s69_cm33_core1.o  ./source/C1_Balteus_1_0_0.o ./source/semihost_hardfault.o  ./rpmsg_lite/virtio/virtqueue.o  ./rpmsg_lite/rpmsg_lite/porting/platform/lpc55s69/rpmsg_platform.o  ./rpmsg_lite/rpmsg_lite/porting/environment/rpmsg_env_freertos.o  ./rpmsg_lite/rpmsg_lite/rpmsg_lite.o ./rpmsg_lite/rpmsg_lite/rpmsg_ns.o ./rpmsg_lite/rpmsg_lite/rpmsg_queue.o  ./rpmsg_lite/common/llist.o  ./mcmgr/mcmgr.o ./mcmgr/mcmgr_internal_core_api_lpc55s69.o  ./freertos/freertos-kernel/portable/MemMang/heap_4.o  ./freertos/freertos-kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.o ./freertos/freertos-kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.o  ./freertos/freertos-kernel/croutine.o ./freertos/freertos-kernel/event_groups.o ./freertos/freertos-kernel/list.o ./freertos/freertos-kernel/queue.o ./freertos/freertos-kernel/stream_buffer.o ./freertos/freertos-kernel/tasks.o ./freertos/freertos-kernel/timers.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_common_arm.o ./drivers/fsl_flexcomm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_power.o ./drivers/fsl_reset.o ./drivers/fsl_usart.o  ./device/system_LPC55S69_cm33_core1.o  ./component/uart/fsl_adapter_usart.o  ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.o  ./component/lists/fsl_component_generic_list.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o    && arm-none-eabi-objcopy --target elf32-littlearm --verbose --strip-all --remove-section=.ARM.attributes --redefine-sym __vectors_start__=__vectors_start___core_m33slave --keep-symbol __vectors_start___core_m33slave --redefine-sym _data=__start_data_core_m33slave --keep-symbol __start_data_core_m33slave --redefine-sym _edata=__end_data_core_m33slave --keep-symbol __end_data_core_m33slave --remove-section=".bss*" --remove-section=".noinit*" --rename-section .ARM.exidx=".core_m33slave.ARM.exidx" --rename-section .ARM.extab=".core_m33slave.ARM.extab" --rename-section .text=".core_m33slave" --rename-section .data=".core_m33slave.data" --rename-section .data_RAM2=".core_m33slave.data_RAM2" "C1_Balteus_1_0_0.axf" "C1_Balteus_1_0_0.axf.o" && mcux-fixelf "C1_Balteus_1_0_0.axf.o"
+c:/nxp/mcuxpressoide_11.9.0_2144/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.0.202307121226/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: C1_Balteus_1_0_0.axf has a LOAD segment with RWX permissions
+Memory region         Used Size  Region Size  %age Used
+            Ram1:       34212 B        68 KB     49.13%
+    rpmsg_sh_mem:          6 KB         6 KB    100.00%
+arm-none-eabi-objcopy: C1_Balteus_1_0_0.axf: warning: empty loadable segment detected at vaddr=0x4c709f20031000, is this intentional?
+copy from `C1_Balteus_1_0_0.axf' [elf32-littlearm] to `C1_Balteus_1_0_0.axf.o' [elf32-littlearm]
+Finished building target: C1_Balteus_1_0_0.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "C1_Balteus_1_0_0.axf"; # arm-none-eabi-objcopy -v -O binary "C1_Balteus_1_0_0.axf" "C1_Balteus_1_0_0.bin" ; # checksum -p LPC55S69 -d "C1_Balteus_1_0_0.bin";
+   text	   data	    bss	    dec	    hex	filename
+  22820	     12	  17524	  40356	   9da4	C1_Balteus_1_0_0.axf
+ 
+
+21:17:38 Build Finished. 0 errors, 1 warnings. (took 2s.538ms)
+

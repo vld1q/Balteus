@@ -1,0 +1,11 @@
+21:17:56 **** Incremental Build of configuration Debug for project C0_Balteus_1_0_0 ****
+make -r -j4 all 
+make[1]: Nothing to be done for 'main-build'.
+Performing post-build steps
+arm-none-eabi-size "C0_Balteus_1_0_0.axf"; # arm-none-eabi-objcopy -v -O binary "C0_Balteus_1_0_0.axf" "C0_Balteus_1_0_0.bin" ; # checksum -p LPC55S69 -d "C0_Balteus_1_0_0.bin";
+   text	   data	    bss	    dec	    hex	filename
+  47672	     24	  17528	  65224	   fec8	C0_Balteus_1_0_0.axf
+ 
+
+21:17:57 Build Finished. 0 errors, 0 warnings. (took 1s.255ms)
+
