@@ -1,0 +1,162 @@
+/*
+ * Copyright 2016-2024 NXP
+ * All rights reserved.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/**
+ * @file    C0_Balteus_1_0_0.c
+ * @brief   Application entry point.
+ */
+#include <stdio.h>
+#include "board.h"
+#include "peripherals.h"
+#include "pin_mux.h"
+#include "clock_config.h"
+#include "LPC55S69_cm33_core0.h"
+#include "fsl_debug_console.h"
+#include "boot_multicore_slave.h"
+/* TODO: insert other include files here. */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "pin_mux.h"
+#include "board.h"
+#include "fsl_debug_console.h"
+#include "FreeRTOS.h"
+#include "message_buffer.h"
+#include "task.h"
+
+#include "fsl_common.h"
+#include "fsl_power.h"
+#include "mcmgr.h"
+
+/*******************************************************************************
+ * Definitions
+ ******************************************************************************/
+/* Address of RAM, where the image for core1 should be copied */
+#define CORE1_BOOT_ADDRESS 0x20033000
+
+#if defined(__CC_ARM) || defined(__ARMCC_VERSION)
+extern uint32_t Image$$CORE1_REGION$$Base;
+extern uint32_t Image$$CORE1_REGION$$Length;
+#define CORE1_IMAGE_START &Image$$CORE1_REGION$$Base
+#elif defined(__ICCARM__)
+extern unsigned char core1_image_start[];
+#define CORE1_IMAGE_START core1_image_start
+#elif (defined(__GNUC__)) && (!defined(__MCUXPRESSO))
+extern const char core1_image_start[];
+extern const char *core1_image_end;
+extern uint32_t core1_image_size;
+#define CORE1_IMAGE_START ((void *)core1_image_start)
+#define CORE1_IMAGE_SIZE  ((void *)core1_image_size)
+#endif
+#define APP_TASK_STACK_SIZE                                (configMINIMAL_STACK_SIZE + 100)
+#define APP_READY_EVENT_DATA                               (1U)
+#define APP_MESSAGE_BUFFER_EVENT_DATA                      (1U)
+#define APP_MESSAGE_BUFFER_SIZE                            (24U)
+#define APP_SH_MEM_PRIMARY_TO_SECONDARY_MB_OFFSET          (0x0u)
+#define APP_SH_MEM_SECONDARY_TO_PRIMARY_MB_OFFSET          (0x4u)
+#define APP_SH_MEM_PRIMARY_TO_SECONDARY_MB_STRUCT_OFFSET   (0x50u)
+#define APP_SH_MEM_SECONDARY_TO_PRIMARY_MB_STRUCT_OFFSET   (0xA0u)
+#define APP_SH_MEM_PRIMARY_TO_SECONDARY_BUF_STORAGE_OFFSET (0x100u)
+#define APP_SH_MEM_SECONDARY_TO_PRIMARY_BUF_STORAGE_OFFSET (0x200u)
+
+typedef struct the_message
+{
+    uint32_t DATA;
+} THE_MESSAGE, *THE_MESSAGE_PTR;
+
+volatile THE_MESSAGE msg = {0};
+
+#define SH_MEM_TOTAL_SIZE (6144U)
+
+
+#if defined(__GNUC__)                             /* GCC */
+unsigned char rpmsg_sh_mem[SH_MEM_TOTAL_SIZE] __attribute__((section(".noinit.$rpmsg_sh_mem")));
+#define APP_SH_MEM_BASE (uint32_t) & rpmsg_sh_mem
+#else
+#error "Message Buffers are not placed in shared memory!"
+#endif
+
+
+#define xPrimaryToSecondaryMessageBuffer \
+    (*(MessageBufferHandle_t *)(APP_SH_MEM_BASE + APP_SH_MEM_PRIMARY_TO_SECONDARY_MB_OFFSET))
+#define xSecondaryToPrimaryMessageBuffer \
+    (*(MessageBufferHandle_t *)(APP_SH_MEM_BASE + APP_SH_MEM_SECONDARY_TO_PRIMARY_MB_OFFSET))
+#define xPrimaryToSecondaryMessageBufferStruct \
+    (*(StaticStreamBuffer_t *)(APP_SH_MEM_BASE + APP_SH_MEM_PRIMARY_TO_SECONDARY_MB_STRUCT_OFFSET))
+#define xSecondaryToPrimaryMessageBufferStruct \
+    (*(StaticStreamBuffer_t *)(APP_SH_MEM_BASE + APP_SH_MEM_SECONDARY_TO_PRIMARY_MB_STRUCT_OFFSET))
+#define ucPrimaryToSecondaryBufferStorage \
+    (*(uint8_t *)(APP_SH_MEM_BASE + APP_SH_MEM_PRIMARY_TO_SECONDARY_BUF_STORAGE_OFFSET))
+#define ucSecondaryToPrimaryBufferStorage \
+    (*(uint8_t *)(APP_SH_MEM_BASE + APP_SH_MEM_SECONDARY_TO_PRIMARY_BUF_STORAGE_OFFSET))
+
+/*******************************************************************************
+ * Prototypes
+ ******************************************************************************/
+
+#ifdef CORE1_IMAGE_COPY_TO_RAM
+uint32_t get_core1_image_size(void);
+#endif
+/*
+ * configSUPPORT_STATIC_ALLOCATION is set to 1, requiring this callback to
+ * provide statically allocated data for use by the idle task, which is a task
+ * created by the scheduler when it starts.
+ */
+void vApplicationGetIdleTaskMemory(StaticTask_t **ppxIdleTaskTCBBuffer,
+                                   StackType_t **ppxIdleTaskStackBuffer,
+                                   uint32_t *pulIdleTaskStackSize);
+
+
+/*******************************************************************************
+ * Code
+ ******************************************************************************/
+
+#ifdef CORE1_IMAGE_COPY_TO_RAM
+uint32_t get_core1_image_size(void)
+{
+    uint32_t image_size;
+#if defined(__GNUC__)
+    image_size = (uint32_t)core1_image_size;
+#endif
+    return image_size;
+}
+#endif
+
+/* TODO: insert other definitions and declarations here. */
+
+/*
+ * @brief   Application entry point.
+ */
+int main(void) {
+
+    /* Init board hardware. */
+    BOARD_InitBootPins();
+    BOARD_InitBootClocks();
+    BOARD_InitBootPeripherals();
+#ifndef BOARD_INIT_DEBUG_CONSOLE_PERIPHERAL
+    /* Init FSL debug console. */
+    BOARD_InitDebugConsole();
+#endif
+
+    /* Start slave CPU. */
+    boot_multicore_slave();
+
+    PRINTF("Hello World from MASTER\r\n");
+
+    /* Force the counter to be placed into memory. */
+    volatile static int i = 0 ;
+    /* Enter an infinite loop, just incrementing a counter. */
+    while(1) {
+        i++ ;
+        /* 'Dummy' NOP to allow source level single stepping of
+            tight while() loop */
+        __asm volatile ("nop");
+    }
+    return 0 ;
+}

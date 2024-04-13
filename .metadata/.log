@@ -1,0 +1,1271 @@
+!SESSION 2024-04-10 19:50:41.535 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2024-04-10 19:51:43.296
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2024-04-10 19:51:55.255
+!MESSAGE Recreating part support. No part support available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-10 19:52:03.366
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SYSTICK'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2024-04-10 19:52:06.644
+!MESSAGE The device 'LPC55S69' (version='1.0.0') from SDK 'SDK_2.x_LPCXpresso55S69' (version='2.15.000', build='epluginsite797 2024-01-15') will be installed.
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2024-04-10 19:52:08.826
+!MESSAGE Exception saving preferences to: C:/nxp/MCUXpressoIDE_11.9.0_2144/ide/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs.
+!STACK 0
+java.nio.file.NoSuchFileException: C:\nxp\MCUXpressoIDE_11.9.0_2144\ide\p2\org.eclipse.equinox.p2.engine\profileRegistry\DefaultProfile.profile\.data\.settings\org.eclipse.equinox.p2.metadata.repository.prefs
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:392)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:292)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1066)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.doSave(ProfilePreferences.java:141)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences$SaveJob.run(ProfilePreferences.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 2 0 2024-04-10 19:52:08.899
+!MESSAGE Exception saving profile preferences
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception saving preferences to: C:/nxp/MCUXpressoIDE_11.9.0_2144/ide/p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile/.data/.settings/org.eclipse.equinox.p2.metadata.repository.prefs.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:300)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1066)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences.doSave(ProfilePreferences.java:141)
+	at org.eclipse.equinox.internal.p2.engine.ProfilePreferences$SaveJob.run(ProfilePreferences.java:54)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: C:\nxp\MCUXpressoIDE_11.9.0_2144\ide\p2\org.eclipse.equinox.p2.engine\profileRegistry\DefaultProfile.profile\.data\.settings\org.eclipse.equinox.p2.metadata.repository.prefs
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:392)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:292)
+	... 4 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-10 20:10:28.558
+!MESSAGE Indexed 'LPC55S69_Project' (32 sources, 56 headers) in 6,89 sec: 8 314 declarations; 24 198 references; 48 unresolved inclusions; 169 syntax errors; 4 528 unresolved names (12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-10 20:23:52.823
+!MESSAGE Indexed 'C1_Balteus__1_N_N' (32 sources, 70 headers) in 2,96 sec: 9 570 declarations; 30 772 references; 4 unresolved inclusions; 111 syntax errors; 20 unresolved names (0,05%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-10 20:34:09.920
+!MESSAGE Indexed 'C1_Balteus_1_0_0' (25 sources, 34 headers) in 2,07 sec: 5 831 declarations; 14 275 references; 28 unresolved inclusions; 59 syntax errors; 3 926 unresolved names (16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-10 20:40:29.657
+!MESSAGE Indexed 'LPC55S69_Project_MASTER' (36 sources, 72 headers) in 2,96 sec: 9 547 declarations; 28 068 references; 16 unresolved inclusions; 162 syntax errors; 2 464 unresolved names (6,1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-10 20:44:31.309
+!MESSAGE Indexed 'C0_Balteus_1_0_0' (36 sources, 73 headers) in 1,92 sec: 9 637 declarations; 31 330 references; 0 unresolved inclusions; 111 syntax errors; 20 unresolved names (0,049%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-10 21:17:44.665
+!MESSAGE Indexed 'C1_Balteus_M33SLAVE' (36 sources, 73 headers) in 2,15 sec: 9 343 declarations; 30 683 references; 0 unresolved inclusions; 122 syntax errors; 54 unresolved names (0,13%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-10 21:21:22.383
+!MESSAGE Indexed 'C1_Balteus_1_0_0' (36 sources, 60 headers) in 3,5 sec: 8 446 declarations; 24 879 references; 45 unresolved inclusions; 169 syntax errors; 4 616 unresolved names (12%)
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:25:24.168
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 21:25:25.209
+!MESSAGE RedlinkServer telnet session connected on port 3025->52083 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:25:47.680
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=52089, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:25:50.499
+!MESSAGE Telnet session connected on port 3330->52102 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:25:52.747
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:25:57.232
+!MESSAGE 10989 Address already in use: bind
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:25:59.191
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=52103, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:26:01.744
+!MESSAGE Telnet session connected on port 3331->52116 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:26:01.992
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:05.670
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@4f6fa1d3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Given context: (gdb[0].proc[42000].threadGroup[i1],gdb[0].proc[42000].OSthread[1]).thread[1], is already suspended.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2024-04-10 21:27:05.670
+!MESSAGE Given context: (gdb[0].proc[42000].threadGroup[i1],gdb[0].proc[42000].OSthread[1]).thread[1], is already suspended.
+
+!ENTRY com.crt.log 4 -1 2024-04-10 21:27:07.004
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:382)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1057)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1187)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1174)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:490)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 13 more
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.548
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@1c54574d): Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #3 = Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@58faea35): Status OK: unknown code=0 OK' resulted in a rejected execution exception., step #3 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.GdbLaunch$5@34e25f5f): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #3 = Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@58faea35): Status OK: unknown code=0 OK' resulted in a rejected execution exception., step #3' resulted in a rejected execution exception.]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 0 2024-04-10 21:27:07.548
+!MESSAGE Executor shut down while executing Sequence Sequence "", result for executing step #3 = Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@58faea35): Status OK: unknown code=0 OK' resulted in a rejected execution exception., step #3
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.548
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.GdbLaunch$5@34e25f5f): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #3 = Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@58faea35): Status OK: unknown code=0 OK' resulted in a rejected execution exception., step #3' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.628
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@72836015' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.689
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@1224b52c' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.707
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@433ba0a6' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.724
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@564826aa' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.742
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@7f73d8b2' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.761
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@4e0c7f0a' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.783
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@1178bc3b' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.802
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@47a409f7' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.821
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@2cd24bab' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.846
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@790e223' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.868
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@5de3196c' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.888
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@509ea004' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.905
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@245d1a5a' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.920
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@6f20902e' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.936
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@234481dd' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.956
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@6e5e0033' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.977
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@62e69e41' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:07.994
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@1153192a' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.059
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@5444ea69' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.087
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@7883b4be' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.111
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@67b539a9' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.130
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@190cb10d' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.151
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@5983c0ac' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.167
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@4c984a6f' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.185
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@32d525fc' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:27:08.207
+!MESSAGE Request for monitor: '[Lorg.eclipse.cdt.dsf.debug.service.IRunControl$IContainerDMContext;@41aaa33e' resulted in a rejected execution exception.
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:27:10.464
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:27:11.447
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 21:27:11.466
+!MESSAGE RedlinkServer telnet session connected on port 3025->52125 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:27:12.459
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=52127, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:27:14.976
+!MESSAGE Telnet session connected on port 3330->52142 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:27:17.048
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.nxp.mcuxpresso.core.debug 4 0 2024-04-10 21:27:20.177
+!MESSAGE There is already a running debug session for the launch configuration 'C1_Balteus_1_0_0 LinkServer Debug'.
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:27:20.464
+!MESSAGE Trying to connect to redlink server on port 3050.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 21:27:20.492
+!MESSAGE RedlinkServer telnet session connected on port 3050->52150 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 21:27:20.723
+!MESSAGE RedlinkServer telnet session connected on port 3025->52150 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:27:20.944
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=52151, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:27:23.499
+!MESSAGE Telnet session connected on port 3331->52163 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:27:23.873
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:28:28.902
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=52216, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:28:31.379
+!MESSAGE Telnet session connected on port 3330->52228 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:28:33.560
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.nxp.mcuxpresso.core.debug 4 0 2024-04-10 21:28:35.819
+!MESSAGE There is already a running debug session for the launch configuration 'C1_Balteus_1_0_0 LinkServer Debug'.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:33:29.221
+!MESSAGE Request for monitor: 'CountingRequestMonitor: Status ERROR: org.eclipse.cdt.dsf code=10004  children=[Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-04-10 21:33:29.221
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:29.474
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:29.474
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:29.474
+!MESSAGE Cannot halt processor.
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:29.474
+!MESSAGE Debugging context: C1_Balteus_1_0_0 LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:33:36.283
+!MESSAGE Request for monitor: 'CountingRequestMonitor: Status ERROR: org.eclipse.cdt.dsf code=10004  children=[Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-04-10 21:33:36.283
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:36.534
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:36.534
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:36.534
+!MESSAGE Cannot halt processor.
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 21:33:36.534
+!MESSAGE Debugging context: C1_Balteus_1_0_0 LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 21:33:39.633
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBRunControl_7_0_NS$16@5e031db8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2024-04-10 21:33:39.633
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:33:40.213
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.log 4 -1 2024-04-10 21:33:40.534
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:382)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1057)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1187)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1174)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:490)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 13 more
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 21:33:41.254
+!MESSAGE RedlinkServer telnet session connected on port 3025->52285 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:34:22.924
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 21:34:23.955
+!MESSAGE RedlinkServer telnet session connected on port 3025->52290 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:34:30.906
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=52294, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:34:33.404
+!MESSAGE Telnet session connected on port 3330->52306 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:34:33.656
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:34:59.963
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 21:35:01.000
+!MESSAGE RedlinkServer telnet session connected on port 3025->52311 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:35:11.599
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=52312, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:35:14.133
+!MESSAGE Telnet session connected on port 3330->52326 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:35:16.010
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-10 21:35:20.735
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=52329, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 21:35:23.221
+!MESSAGE Telnet session connected on port 3331->52341 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 21:35:23.541
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 4 -1 2024-04-10 21:43:09.459
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:382)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1057)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1187)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1174)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:490)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 13 more
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 22:42:13.312
+!MESSAGE Overwriting file '/C0_Balteus_1_0_0/board/clock_config.h' by 'boards/lpcxpresso55s69/project_template/clock_config.h'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 22:42:16.329
+!MESSAGE Overwriting file '/C0_Balteus_1_0_0/board/pin_mux.h' by 'boards/lpcxpresso55s69/project_template/pin_mux.h'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 22:42:17.217
+!MESSAGE Overwriting file '/C0_Balteus_1_0_0/board/peripherals.h' by 'boards/lpcxpresso55s69/project_template/peripherals.h'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 22:42:17.948
+!MESSAGE Overwriting file '/C0_Balteus_1_0_0/board/clock_config.c' by 'boards/lpcxpresso55s69/project_template/clock_config.c'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 22:42:19.394
+!MESSAGE Overwriting file '/C0_Balteus_1_0_0/board/pin_mux.c' by 'boards/lpcxpresso55s69/project_template/pin_mux.c'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 22:42:21.430
+!MESSAGE Overwriting file '/C0_Balteus_1_0_0/board/peripherals.c' by 'boards/lpcxpresso55s69/project_template/peripherals.c'
+
+!ENTRY com.crt.log 1 0 2024-04-10 22:52:46.434
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 22:52:47.464
+!MESSAGE RedlinkServer telnet session connected on port 3025->53079 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 22:53:00.310
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=53080, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 22:53:02.834
+!MESSAGE Telnet session connected on port 3330->53092 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 22:53:06.309
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-10 22:53:11.384
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=53100, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 22:53:13.902
+!MESSAGE Telnet session connected on port 3331->53115 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 22:53:14.260
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 22:54:26.657
+!MESSAGE Request for monitor: 'CountingRequestMonitor: Status ERROR: org.eclipse.cdt.dsf code=10004  children=[Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-04-10 22:54:26.657
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:26.957
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:26.957
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:26.957
+!MESSAGE Cannot halt processor.
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:26.957
+!MESSAGE Debugging context: C1_Balteus_1_0_0 LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 22:54:36.538
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@5d0e64c4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-04-10 22:54:36.538
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:36.788
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:36.788
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:36.788
+!MESSAGE Cannot halt processor.
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 22:54:36.788
+!MESSAGE Debugging context: C1_Balteus_1_0_0 LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 22:54:38.395
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@131987d7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Given context: (gdb[9].proc[42000].threadGroup[i1],gdb[9].proc[42000].OSthread[1]).thread[1], is already suspended.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2024-04-10 22:54:38.395
+!MESSAGE Given context: (gdb[9].proc[42000].threadGroup[i1],gdb[9].proc[42000].OSthread[1]).thread[1], is already suspended.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 22:54:39.211
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBRunControl_7_0_NS$16@63a31518): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2024-04-10 22:54:39.211
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2024-04-10 22:54:39.719
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 22:54:40.749
+!MESSAGE RedlinkServer telnet session connected on port 3025->53123 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 22:54:48.342
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 22:54:49.376
+!MESSAGE RedlinkServer telnet session connected on port 3025->53127 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 22:55:10.090
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=53128, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 22:55:12.575
+!MESSAGE Telnet session connected on port 3330->53140 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 22:55:15.384
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-10 22:55:20.995
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=53142, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 22:55:23.563
+!MESSAGE Telnet session connected on port 3331->53154 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 22:55:24.031
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 23:01:16.599
+!MESSAGE Overwriting file '/C1_Balteus_1_0_0/source/FreeRTOSConfig.h' by 'rtos/freertos/freertos-kernel/template/ARM_CM33_3_priority_bits/FreeRTOSConfig.h'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 23:01:20.666
+!MESSAGE Overwriting file '/C1_Balteus_1_0_0/board/clock_config.h' by 'boards/lpcxpresso55s69/project_template/clock_config.h'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 23:01:21.981
+!MESSAGE Overwriting file '/C1_Balteus_1_0_0/board/peripherals.h' by 'boards/lpcxpresso55s69/project_template/peripherals.h'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 23:01:23.646
+!MESSAGE Overwriting file '/C1_Balteus_1_0_0/board/clock_config.c' by 'boards/lpcxpresso55s69/project_template/clock_config.c'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 2 0 2024-04-10 23:01:28.236
+!MESSAGE Overwriting file '/C1_Balteus_1_0_0/board/peripherals.c' by 'boards/lpcxpresso55s69/project_template/peripherals.c'
+
+!ENTRY com.crt.log 1 0 2024-04-10 23:03:15.348
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 23:03:16.381
+!MESSAGE RedlinkServer telnet session connected on port 3025->53213 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 23:03:25.427
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=53214, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 23:03:27.906
+!MESSAGE Telnet session connected on port 3330->53226 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 23:03:31.524
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+!SESSION 2024-04-10 23:05:22.224 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-10 23:05:34.860
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2024-04-10 23:05:53.054
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-10 23:06:08.996
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SYSTICK'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.crt.log 1 0 2024-04-10 23:06:16.247
+!MESSAGE Terminating orphan process: crt_emu_cm_redlink.exe, with pid=15856 completed succesfully
+
+!ENTRY com.crt.log 1 0 2024-04-10 23:06:37.697
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 23:06:38.894
+!MESSAGE RedlinkServer telnet session connected on port 3025->53269 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-10 23:07:03.227
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=53294, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 23:07:06.358
+!MESSAGE Telnet session connected on port 3330->53313 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 23:07:10.016
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-10 23:07:16.076
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=53322, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-10 23:07:18.608
+!MESSAGE Telnet session connected on port 3331->53337 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-10 23:07:19.064
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.517
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.517
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.517
+!MESSAGE Hardware Transfer Error
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.517
+!MESSAGE Debugging context: C0_Balteus_1_0_0 LinkServer Debug
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.656
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.656
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.656
+!MESSAGE Hardware Transfer Error
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-10 23:14:46.656
+!MESSAGE Debugging context: C1_Balteus_1_0_0 LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 23:16:02.487
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@3f500bff): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-04-10 23:16:02.487
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-10 23:16:03.247
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBRunControl_7_0_NS$16@66c7134d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2024-04-10 23:16:03.247
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2024-04-10 23:16:03.730
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-10 23:16:04.819
+!MESSAGE RedlinkServer telnet session connected on port 3025->53577 @ 127.0.0.1
+
+!ENTRY com.crt.log 4 -1 2024-04-10 23:16:05.495
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:382)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1057)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1187)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1174)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:490)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 13 more
+!SESSION 2024-04-11 11:32:02.234 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2024-04-11 11:33:17.007
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-11 11:33:39.244
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SYSTICK'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:37:46.043
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-11 11:37:47.068
+!MESSAGE RedlinkServer telnet session connected on port 3025->50406 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:38:03.128
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=50419, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-11 11:38:06.122
+!MESSAGE Telnet session connected on port 3330->50436 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-11 11:38:08.295
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:38:14.631
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=50443, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-11 11:38:17.091
+!MESSAGE Telnet session connected on port 3331->50458 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-11 11:38:17.501
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-11 11:43:17.745
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@6763240e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Given context: (gdb[1].proc[42000].threadGroup[i1],gdb[1].proc[42000].OSthread[1]).thread[1], is already suspended.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2024-04-11 11:43:17.745
+!MESSAGE Given context: (gdb[1].proc[42000].threadGroup[i1],gdb[1].proc[42000].OSthread[1]).thread[1], is already suspended.
+
+!ENTRY com.crt.log 4 -1 2024-04-11 11:43:20.203
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:382)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1057)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1187)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1174)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:490)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 13 more
+
+!ENTRY com.crt.log 4 -1 2024-04-11 11:43:20.225
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.lambda$16(MCXTelnetService.java:689)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.handleDebugEvents(MCXTelnetService.java:689)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1226)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1260)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:492)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 8 more
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:49:30.196
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-11 11:49:31.227
+!MESSAGE RedlinkServer telnet session connected on port 3025->50525 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:50:03.044
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=50526, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-11 11:50:05.547
+!MESSAGE Telnet session connected on port 3330->50538 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-11 11:50:09.271
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+!SESSION 2024-04-11 11:51:50.247 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-11 11:52:03.891
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2024-04-11 11:52:09.274
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-11 11:52:21.456
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SYSTICK'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:52:28.087
+!MESSAGE Terminating orphan process: crt_emu_cm_redlink.exe, with pid=16744 completed succesfully
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:55:35.365
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-11 11:55:36.422
+!MESSAGE RedlinkServer telnet session connected on port 3025->50717 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:55:46.453
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=50724, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-11 11:55:49.358
+!MESSAGE Telnet session connected on port 3330->50741 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-11 11:55:49.865
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:56:19.025
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-11 11:56:20.057
+!MESSAGE RedlinkServer telnet session connected on port 3025->50768 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:56:54.247
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=50797, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-11 11:56:57.116
+!MESSAGE Telnet session connected on port 3330->50813 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-11 11:57:00.930
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-11 11:57:06.392
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=50819, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-11 11:57:09.190
+!MESSAGE Telnet session connected on port 3331->50834 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-11 11:57:09.998
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-11 11:57:43.613
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@da0ed47): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Given context: (gdb[2].proc[42000].threadGroup[i1],gdb[2].proc[42000].OSthread[1]).thread[1], is already suspended.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2024-04-11 11:57:43.613
+!MESSAGE Given context: (gdb[2].proc[42000].threadGroup[i1],gdb[2].proc[42000].OSthread[1]).thread[1], is already suspended.
+
+!ENTRY org.eclipse.ui 4 0 2024-04-11 11:57:44.953
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.dsf.service.DsfSession.getId()" because "session" is null
+	at com.nxp.mcuxpresso.core.debug.ui.SuspendAllAction.run(SuspendAllAction.java:76)
+	at com.nxp.mcuxpresso.core.debug.ui.TerminateAllActionDelegate.run(TerminateAllActionDelegate.java:96)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:239)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY com.crt.log 4 -1 2024-04-11 11:57:45.553
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:382)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1057)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1187)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1174)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:490)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 13 more
+!SESSION 2024-04-13 20:56:14.276 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2024-04-13 21:01:39.428
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-13 21:02:03.566
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SYSTICK'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.crt.log 1 0 2024-04-13 21:17:31.050
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-13 21:17:31.070
+!MESSAGE RedlinkServer telnet session connected on port 3025->51342 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-04-13 21:18:07.856
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=51375, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, -x, D:/MCUXpresso/balteus_1.0.0/C0_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-13 21:18:10.792
+!MESSAGE Telnet session connected on port 3330->51392 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-13 21:18:14.583
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.crt.log 1 0 2024-04-13 21:18:23.047
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.4.85/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=51403, -g, -mi, -2, -pLPC55S69, -vendor=NXP, -attach, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=1, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/MCUXpresso/balteus_1.0.0/C1_Balteus_1_0_0/Debug, --flash-dir, C:/nxp/LinkServer_1.4.85/binaries/Flash, --flash-dir, D:/MCUXpresso/balteus_1.0.0/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3331 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-04-13 21:18:25.869
+!MESSAGE Telnet session connected on port 3331->51419 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 2 0 2024-04-13 21:18:28.982
+!MESSAGE Symbol 'main' is outside Hardware Breakpoint area. Disabling Hardware Breakpoint flag
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-13 22:26:44.018
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-13 22:26:44.020
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-13 22:26:44.020
+!MESSAGE Hardware Transfer Error
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2024-04-13 22:26:44.020
+!MESSAGE Debugging context: C1_Balteus_1_0_0 LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-13 22:36:47.874
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@59951f4a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Given context: (gdb[0].proc[42000].threadGroup[i1],gdb[0].proc[42000].OSthread[1]).thread[1], is already suspended.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2024-04-13 22:36:47.874
+!MESSAGE Given context: (gdb[0].proc[42000].threadGroup[i1],gdb[0].proc[42000].OSthread[1]).thread[1], is already suspended.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2024-04-13 22:36:50.099
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBRunControl_7_0_NS$16@3714ed62): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2024-04-13 22:36:50.099
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2024-04-13 22:36:53.320
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.log 4 -1 2024-04-13 22:36:54.898
+!MESSAGE Write failed: 
+
+!STACK 0
+java.lang.Exception: java.io.IOException: Write failed: 
+
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:201)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.launchesTerminated(MCXTelnetService.java:382)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:262)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1057)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:479)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.access$1(DsfLaunch.java:1)
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.lambda$1(DsfLaunch.java:47)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1187)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1174)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:490)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Write failed: 
+
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.writeToServer(MCXTelnetService.java:574)
+	at com.nxp.mcuxpresso.core.debug.services.MCXTelnetService.shutdown(MCXTelnetService.java:199)
+	... 13 more
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-04-13 22:36:55.489
+!MESSAGE RedlinkServer telnet session connected on port 3025->53445 @ 127.0.0.1
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-13 22:41:59.231
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2024-04-13 22:48:28.090 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\MCUXpresso\balteus_1.0.0
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-13 22:48:32.796
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.css.swt.theme 4 0 2024-04-13 22:48:45.935
+!MESSAGE /css/gef_dark.css
+!STACK 0
+java.io.FileNotFoundException: /css/gef_dark.css
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:468)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:436)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.setTheme(ThemeEngine.java:428)
+	at org.eclipse.e4.ui.css.swt.internal.theme.ThemeEngine.restore(ThemeEngine.java:624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.setCSSTheme(PartRenderingEngine.java:1417)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.initializeStyling(PartRenderingEngine.java:1324)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1050)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-13 22:49:13.684
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SYSTICK'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
